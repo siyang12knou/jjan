@@ -22,6 +22,10 @@ spring:
         use_sql_comments: true
     database: mysql
 
+webdriver:
+  chrome:
+    driver: C:\\Users\\siyan\\workspaces\\jjan\\server\\driver\\window\\chromedriver.exe
+
 #logging:
 #  config: classpath:logback-spring.xml
 
