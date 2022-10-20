@@ -9,9 +9,10 @@ import '../../values/values.dart';
 
 class ResultChannel extends StatefulWidget {
   final Code code;
+  final List<dynamic> mentionData;
   final List<dynamic> associatedData;
 
-  const ResultChannel({Key key, this.code, this.associatedData}) : super(key: key);
+  const ResultChannel({Key key, this.code, this.associatedData, this.mentionData}) : super(key: key);
 
   @override
   State<ResultChannel> createState() => _ResultChannelState();
@@ -21,11 +22,17 @@ class _ResultChannelState extends State<ResultChannel> {
   @override
   Widget build(BuildContext context) {
     int sum = 0;
+    widget.mentionData.forEach((element) {
+      String sns = element["sns"];
+      if(widget.code.codeId == sns) {
+        sum += element["cnt"];
+      }
+    });
+
     List<ResultChannelItem> items = [];
     if(widget.associatedData != null) {
       for(int i = 0; i < widget.associatedData.length; i++) {
         var element = widget.associatedData[i];
-        sum += element["cnt"];
         element["ordinal"] = i + 1;
         items.add(ResultChannelItem(itemData: element));
       }

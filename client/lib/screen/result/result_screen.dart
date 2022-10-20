@@ -275,7 +275,11 @@ class _ResultScreenState extends State<ResultScreen> {
                                 width: panelWidth,
                                 height: 380,
                                 decoration: panelDecoration,
-                                child: ResultChannel(code: code, associatedData: _resultMessage.data["associationList"][code.codeId])
+                                child: ResultChannel(
+                                    code: code,
+                                    mentionData: _resultMessage.data["mentionList"],
+                                    associatedData: _resultMessage.data["associationList"][code.codeId]
+                                )
                               )
                             ]
                           );
