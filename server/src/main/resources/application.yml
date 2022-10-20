@@ -24,7 +24,7 @@ spring:
 
 webdriver:
   chrome:
-    driver: C:\\Users\\siyan\\workspaces\\jjan\\server\\driver\\window\\chromedriver.exe
+    driver: C:\\Users\\siyan\\workspaces\\jjan\\server\\driver\\chromedriver.exe
 
 #logging:
 #  config: classpath:logback-spring.xml
