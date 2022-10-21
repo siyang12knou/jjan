@@ -26,4 +26,5 @@ GROUP BY sns, word, associatedWord
 ORDER BY cnt DESC 
 """)
     List<AssociationAggrDto> findAggrByWordAndYear(String word, String fromYmd, String toYmd, List<String> sns);
+    void deleteByFromYmdAnAndToYmd(String fromYmd, String toYmd);
 }

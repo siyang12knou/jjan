@@ -8,5 +8,6 @@ import java.util.List;
 
 @Repository
 public interface WordRepository extends JpaRepository<WordEntity, Integer> {
-    List<WordEntity> findAllByWordStartsWith(String word);
+    List<WordEntity> findAllByWordStartsWithAndDeletedFalse(String word);
+    List<WordEntity> findAllByDeletedFalse();
 }

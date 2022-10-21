@@ -26,4 +26,5 @@ SELECT sns, word, ym, SUM(cnt) AS cnt
  GROUP BY sns, word, ym
 """)
     List<MentionAggrDto> findAggrByWordAndYear(String word, String fromYmd, String toYmd, List<String> sns);
+    void deleteByFromYmdAnAndToYmd(String fromYmd, String toYmd);
 }
