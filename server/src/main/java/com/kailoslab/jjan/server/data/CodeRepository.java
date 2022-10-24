@@ -13,4 +13,5 @@ public interface CodeRepository extends JpaRepository<CodeEntity, CodePK> {
 
     List<CodeEntity> findByGroupIdAndDeletedFalseOrderByOrdinal(String groupId);
     Optional<CodeEntity> findFirstByGroupIdAndDeletedFalseOrderByOrdinalDesc(String groupId);
+    Optional<CodeEntity> findByGroupIdAndCodeIdAndDeletedFalse(String groupId, String codeId);
 }

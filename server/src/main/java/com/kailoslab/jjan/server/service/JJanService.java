@@ -33,7 +33,7 @@ public class JJanService {
         if(StringUtils.isAllBlank(prefix)) {
             return wordRepository.findAll();
         } else {
-            return wordRepository.findAllByWordStartsWith(prefix);
+            return wordRepository.findAllByWordStartsWithAndDeletedFalse(prefix);
         }
     }
 

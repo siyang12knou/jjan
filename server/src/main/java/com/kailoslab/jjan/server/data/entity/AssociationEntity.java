@@ -20,6 +20,7 @@ public class AssociationEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Long id;
+    private String sns;
     private Integer idWord;
     private String word;
     private String fromYmd;
@@ -28,4 +29,13 @@ public class AssociationEntity {
     private Integer subCnt;
     @CreatedDate
     private LocalDateTime createdDate;
+
+    public AssociationEntity(String sns, Integer idWord, String word, String fromYmd, String toYmd, Integer cnt) {
+        this.sns = sns;
+        this.idWord = idWord;
+        this.word = word;
+        this.fromYmd = fromYmd;
+        this.toYmd = toYmd;
+        this.cnt = cnt;
+    }
 }

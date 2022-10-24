@@ -26,6 +26,9 @@ webdriver:
   chrome:
     driver: C:\\Users\\siyan\\workspaces\\jjan\\server\\driver\\chromedriver.exe
 
+kailoslab:
+  download-dir: C:\Users\siyan\Downloads\some
+
 #logging:
 #  config: classpath:logback-spring.xml
 

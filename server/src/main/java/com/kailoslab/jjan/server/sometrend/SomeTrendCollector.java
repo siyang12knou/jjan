@@ -10,6 +10,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.springframework.beans.factory.annotation.Value;
@@ -19,6 +22,7 @@ import org.springframework.util.ObjectUtils;
 import javax.annotation.PostConstruct;
 import java.text.MessageFormat;
 import java.time.Duration;
+import java.util.HashMap;
 import java.util.List;
 
 @RequiredArgsConstructor
@@ -28,6 +32,8 @@ public class SomeTrendCollector {
 
     @Value("${webdriver.chrome.driver}")
     private String driverPath;
+    @Value("${kailoslab.download-dir}")
+    private String downloadDir;
     private WebDriver webDriver;
 
     private final WordRepository wordRepository;
@@ -36,7 +42,12 @@ public class SomeTrendCollector {
     private void init() {
         if(StringUtils.isNotEmpty(driverPath)) {
             System.setProperty(ChromeDriverService.CHROME_DRIVER_EXE_PROPERTY, driverPath);
-            webDriver = new ChromeDriver();
+            HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
+            chromePrefs.put("profile.default_content_settings.popups", 0);
+            chromePrefs.put("download.default_directory", downloadDir);
+            ChromeOptions options = new ChromeOptions();
+            options.setExperimentalOption("prefs", chromePrefs);
+            webDriver = new ChromeDriver(options);
         }
     }
 

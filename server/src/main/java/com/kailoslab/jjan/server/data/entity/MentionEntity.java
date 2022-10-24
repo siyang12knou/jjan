@@ -20,6 +20,7 @@ public class MentionEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private Long id;
+    private String sns;
     private Integer idWord;
     private String fromYmd;
     private String toYmd;
@@ -27,4 +28,16 @@ public class MentionEntity {
     private Integer subCnt;
     @CreatedDate
     private LocalDateTime createdDate;
+
+    public MentionEntity(String sns, Integer idWord, String fromYmd, String toYmd, Integer cnt) {
+        this(sns, idWord, fromYmd, toYmd, cnt, null);
+    }
+
+    public MentionEntity(String sns, Integer idWord, String fromYmd, String toYmd, Integer cnt, Integer subCnt) {
+        this.sns = sns;
+        this.idWord = idWord;
+        this.fromYmd = fromYmd;
+        this.toYmd = toYmd;
+        this.cnt = cnt;
+    }
 }
