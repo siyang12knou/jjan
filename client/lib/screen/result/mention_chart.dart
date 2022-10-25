@@ -49,7 +49,7 @@ class MentionChart extends StatelessWidget {
                   majorGridLines: MajorGridLines(width: 0)
                 ),
                 legend: Legend(
-                  width: "100%",
+                  width: "120%",
                   isVisible: true,
                   position: LegendPosition.bottom,
                   overflowMode: LegendItemOverflowMode.wrap,
@@ -64,7 +64,7 @@ class MentionChart extends StatelessWidget {
                 series: getChartSeries(),
               ),
             ),
-          )
+          ),
         ],
       ),
     );

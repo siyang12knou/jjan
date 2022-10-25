@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b0fb81b-096d-4ac3-b81d-0bf105919e00" name="Changes" comment="root ignore 파일 수정" />
+    <list default="true" id="5b0fb81b-096d-4ac3-b81d-0bf105919e00" name="Changes" comment="프로젝트 파일 수정">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/screen/result/mention_chart.dart" beforeDir="false" afterPath="$PROJECT_DIR$/client/lib/screen/result/mention_chart.dart" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,9 +16,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Dart File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Dart File" />
       </list>
     </option>
   </component>
@@ -42,6 +45,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "dart.analysis.tool.window.visible": "false",
+    "flutter.view.tool.window.visible": "true",
     "io.flutter.reload.alreadyRun": "true",
     "jdk.selected.JAVA_MODULE": "17",
     "last_opened_file_path": "C:/Users/siyan/workspaces/jjan/server/src/main/java/com/kailoslab/jjan/server",
@@ -121,7 +125,7 @@
       <workItem from="1666317439779" duration="4314000" />
       <workItem from="1666328677783" duration="12386000" />
       <workItem from="1666572423896" duration="18719000" />
-      <workItem from="1666656709167" duration="17354000" />
+      <workItem from="1666656709167" duration="18899000" />
     </task>
     <task id="LOCAL-00001" summary="to java">
       <created>1666252720207</created>
@@ -172,7 +176,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666680883686</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="프로젝트 파일 수정">
+      <created>1666680933326</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1666680933326</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,7 +217,8 @@
     <MESSAGE value="화면 실 데이터 테스트 확인" />
     <MESSAGE value="root ignore 파일 생성" />
     <MESSAGE value="root ignore 파일 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value="root ignore 파일 수정" />
+    <MESSAGE value="프로젝트 파일 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="프로젝트 파일 수정" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
