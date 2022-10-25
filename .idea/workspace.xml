@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b0fb81b-096d-4ac3-b81d-0bf105919e00" name="Changes" comment="root ignore 파일 생성">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-    </list>
+    <list default="true" id="5b0fb81b-096d-4ac3-b81d-0bf105919e00" name="Changes" comment="root ignore 파일 수정" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -123,7 +121,7 @@
       <workItem from="1666317439779" duration="4314000" />
       <workItem from="1666328677783" duration="12386000" />
       <workItem from="1666572423896" duration="18719000" />
-      <workItem from="1666656709167" duration="17239000" />
+      <workItem from="1666656709167" duration="17354000" />
     </task>
     <task id="LOCAL-00001" summary="to java">
       <created>1666252720207</created>
@@ -167,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666680771500</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="root ignore 파일 수정">
+      <created>1666680883686</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1666680883686</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,7 +205,8 @@
     <MESSAGE value="크롤링 구현 중" />
     <MESSAGE value="화면 실 데이터 테스트 확인" />
     <MESSAGE value="root ignore 파일 생성" />
-    <option name="LAST_COMMIT_MESSAGE" value="root ignore 파일 생성" />
+    <MESSAGE value="root ignore 파일 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="root ignore 파일 수정" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
