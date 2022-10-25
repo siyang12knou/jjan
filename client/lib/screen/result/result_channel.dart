@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:jjan_client/screen/result/result_channel_item.dart';
@@ -31,7 +32,7 @@ class _ResultChannelState extends State<ResultChannel> {
 
     List<ResultChannelItem> items = [];
     if(widget.associatedData != null) {
-      for(int i = 0; i < widget.associatedData.length; i++) {
+      for(int i = 0; i < widget.associatedData.length && i < 10; i++) {
         var element = widget.associatedData[i];
         element["ordinal"] = i + 1;
         items.add(ResultChannelItem(itemData: element));
@@ -128,7 +129,7 @@ class _ResultChannelState extends State<ResultChannel> {
                           ),
                         ),
                         Spacer(),
-                        Text(
+                        AutoSizeText(
                           NumberFormat("###,###,###,###").format(sum),
                           textAlign: TextAlign.left,
                           style: TextStyle(
@@ -138,6 +139,8 @@ class _ResultChannelState extends State<ResultChannel> {
                             fontSize: 40,
                             letterSpacing: -1.6,
                           ),
+                          minFontSize: 12,
+                          maxLines: 1,
                         ),
                       ],
                     ),

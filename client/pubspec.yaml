@@ -23,6 +23,7 @@ dependencies:
   syncfusion_flutter_charts: ^20.3.50
   http: ^0.13.5
   universal_html: ^2.0.8
+  auto_size_text: ^3.0.0
 
 dev_dependencies:
   flutter_test:

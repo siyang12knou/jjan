@@ -23,8 +23,8 @@ SELECT A.sns      AS sns,
    AND B.word = :word
    AND A.sns IN :sns
 GROUP BY sns, word, associatedWord
-ORDER BY cnt DESC 
+ORDER BY sns ASC, cnt DESC 
 """)
     List<AssociationAggrDto> findAggrByWordAndYear(String word, String fromYmd, String toYmd, List<String> sns);
-    void deleteByFromYmdAnAndToYmd(String fromYmd, String toYmd);
+    void deleteByFromYmdAndToYmd(String fromYmd, String toYmd);
 }

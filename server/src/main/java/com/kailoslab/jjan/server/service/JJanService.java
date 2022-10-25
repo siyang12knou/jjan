@@ -9,6 +9,7 @@ import com.kailoslab.jjan.server.data.dto.MentionAggrDto;
 import com.kailoslab.jjan.server.data.entity.CodeEntity;
 import com.kailoslab.jjan.server.data.entity.WordEntity;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 
@@ -18,6 +19,7 @@ import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
 @RequiredArgsConstructor
+@Slf4j
 @Service
 public class JJanService {
     private final WordRepository wordRepository;
@@ -42,22 +44,32 @@ public class JJanService {
     }
 
     public List<MentionAggrDto> getMentionList(String word, String fromYm, String toYm, List<String> sns) {
-        return mentionRepository.findAggrByWordAndYear(word, fromYm + "01", toYm + "31", sns);
+        try {
+            return mentionRepository.findAggrByWordAndYear(word, fromYm + "01", toYm + "31", sns);
+        } catch (Throwable e) {
+            log.error(String.format("Cannot search a list of mention. : %s, %s, %s, %s", word, fromYm, toYm, sns));
+            return Collections.emptyList();
+        }
     }
 
     public Map<String, List<AssociationAggrDto>> getAssociationList(String word, String fromYm, String toYm, List<String> sns) {
-        List<AssociationAggrDto> list = associationRepository.findAggrByWordAndYear(word, fromYm + "01", toYm + "31", sns);
-        Map<String, List<AssociationAggrDto>> result = new HashMap<>(sns.size());
-        for(AssociationAggrDto associationAggrDto: list) {
-            List<AssociationAggrDto> snsList = result.computeIfAbsent(associationAggrDto.getSns(), k -> new ArrayList<>());
-            snsList.add(associationAggrDto);
+        try {
+            List<AssociationAggrDto> list = associationRepository.findAggrByWordAndYear(word, fromYm + "01", toYm + "31", sns);
+            Map<String, List<AssociationAggrDto>> result = new HashMap<>(sns.size());
+            for (AssociationAggrDto associationAggrDto : list) {
+                List<AssociationAggrDto> snsList = result.computeIfAbsent(associationAggrDto.getSns(), k -> new ArrayList<>());
+                snsList.add(associationAggrDto);
+            }
+
+            result.forEach((snsCodeId, snsResult) -> {
+                snsResult.sort((aggrDto1, aggrDto2) -> aggrDto2.getCnt() - aggrDto1.getCnt());
+            });
+
+            return result;
+        } catch (Throwable e) {
+            log.error(String.format("Cannot search a list of association. : %s, %s, %s, %s", word, fromYm, toYm, sns));
+            return Collections.emptyMap();
         }
-
-        result.forEach((snsCodeId, snsResult) -> {
-            snsResult.sort((aggrDto1, aggrDto2) -> aggrDto2.getCnt() - aggrDto1.getCnt());
-        });
-
-        return result;
     }
 
     public List<MentionAggrDto> getDummyMentionList(String word, String fromYm, String toYm, List<String> sns) {

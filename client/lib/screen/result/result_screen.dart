@@ -10,9 +10,11 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:jjan_client/model/result_message.dart';
 import 'package:jjan_client/screen/result/mention_chart.dart';
+import 'package:jjan_client/screen/search_screen.dart';
 import 'package:jjan_client/service/jjan_service.dart';
 import '../../model/code.dart';
 import '../../service/code_service.dart';
+import '../../utils/utils.dart';
 import '../../widget/hspace_widget.dart';
 import '../../widget/vspace_widget.dart';
 import '../../utils/constants.dart';
@@ -47,9 +49,17 @@ class _ResultScreenState extends State<ResultScreen> {
   void initState() {
     super.initState();
     CodeService.getInstance().getCodeList("sns").then((value) => setState(() => snsCodeList = value));
-    DateTime current = DateTime.now();
-    String toYm = DateFormat("yyyyMM").format(current);
-    String fromYm = DateFormat("yyyyMM").format(current.subtract(Duration(days: 365)));
+    DateTime toDate = DateTime(DateTime.now().year, DateTime.now().month, 0);
+    String toYm = DateFormat("yyyyMM").format(toDate);
+    DateTime beforeYear = toDate.subtract(Duration(days: 365));
+    String fromYm;
+    if(beforeYear.month == 12) {
+      fromYm = (beforeYear.year + 1).toString() + "01";
+    } else {
+      int fromMonth = beforeYear.month + 1;
+      fromYm = beforeYear.year.toString() + (fromMonth < 10 ? "0" + fromMonth.toString() : fromMonth.toString());
+    }
+
     JJanService.getInstance().search(widget.searchWord, fromYm, toYm, widget.snsList).then((value) => setState(() => _resultMessage = value));
   }
 
@@ -295,29 +305,34 @@ class _ResultScreenState extends State<ResultScreen> {
         ),
       ),
       floatingActionButton: snsCodeList.isEmpty || !_resultMessage.result ? null :
-      Container(
-        width: 100,
-        height: 117,
-        decoration: BoxDecoration(
-          color: AppColors.primaryBackground,
-          border: Border.all(color: Color(0xFF1BFE91), width: 2),
-          borderRadius: Radii.k18pxRadius,
-          boxShadow: [
-            BoxShadow(
-              color: Color.fromARGB(255, 0, 250, 139),
-              offset: Offset(0, 0),
-              blurRadius: 12,
-           ),
-          ],
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(Icons.search, size: 50,),
-            VSpace(10),
-            Text("키워드 재검색")
-          ],
+      InkWell(
+        onTap: () {
+          goTo(context, SearchScreen());
+        },
+        child: Container(
+          width: 100,
+          height: 117,
+          decoration: BoxDecoration(
+            color: AppColors.primaryBackground,
+            border: Border.all(color: Color(0xFF1BFE91), width: 2),
+            borderRadius: Radii.k18pxRadius,
+            boxShadow: [
+              BoxShadow(
+                color: Color.fromARGB(255, 0, 250, 139),
+                offset: Offset(0, 0),
+                blurRadius: 12,
+             ),
+            ],
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(Icons.search, size: 50,),
+              VSpace(10),
+              Text("키워드 재검색")
+            ],
+          ),
         ),
       ),
       floatingActionButtonLocation: ResultFloatingActionButtonLocation(),

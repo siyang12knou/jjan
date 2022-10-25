@@ -1066,7 +1066,7 @@ tfdb|schema||tfdbAdmin|localhost|grant option|G</Grants>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
     <column id="302" parent="297" name="id">
-      <AutoIncrement>3</AutoIncrement>
+      <AutoIncrement>71579</AutoIncrement>
       <Comment>기본값</Comment>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>

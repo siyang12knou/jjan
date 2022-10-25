@@ -5,45 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b0fb81b-096d-4ac3-b81d-0bf105919e00" name="Changes" comment="크롤링 구현 중">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_virtuald_curvesapi_1_07.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_SparseBitSet_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_15.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_11_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_java_dev_jna_jna_5_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_ST4_4_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr_runtime_3_5_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_21.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math3_3_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_5_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_5_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_lite_5_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_5_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_2_5_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jline_jline_3_21_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jline_jline_terminal_3_21_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jline_jline_terminal_jna_3_21_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_7_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_shell_spring_shell_autoconfigure_2_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_shell_spring_shell_core_2_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_shell_spring_shell_standard_2_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_shell_spring_shell_standard_commands_2_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_shell_spring_shell_starter_2_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_shell_spring_shell_table_2_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_5_3_23.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/sometrend/parser/ParserCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/sometrend/parser/SomeTrendExcelParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/1722ad7c-434d-4bd6-81d7-1658864e9f43.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1722ad7c-434d-4bd6-81d7-1658864e9f43.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/CodeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/CodeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/WordRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/WordRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/screen/result/result_channel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/client/lib/screen/result/result_channel.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/screen/result/result_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/client/lib/screen/result/result_screen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/client/pubspec.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/ServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/ServerApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/controller/JJanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/controller/JJanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/AssociationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/AssociationRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/MentionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/MentionRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/entity/AssociationEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/entity/AssociationEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/entity/CodeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/entity/CodeEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/entity/MentionEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/entity/MentionEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/entity/WordEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/entity/WordEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/service/JJanService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/service/JJanService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/sometrend/SomeTrendCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/sometrend/SomeTrendCollector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/sometrend/parser/ParserCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/sometrend/parser/ParserCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/sometrend/parser/SomeTrendExcelParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/sometrend/parser/SomeTrendExcelParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,34 +51,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/siyan/workspaces/jjan/server/src/main/java/com/kailoslab/jjan/server&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;cf1e8c14e54505f60aa10ceb8d5d8ab3&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "io.flutter.reload.alreadyRun": "true",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/Users/siyan/workspaces/jjan/server/src/main/java/com/kailoslab/jjan/server",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "show.migrate.to.gradle.popup": "false",
+    "spring.configuration.checksum": "cf1e8c14e54505f60aa10ceb8d5d8ab3"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\siyan\workspaces\jjan\server\src\main\java\com\kailoslab\jjan\server" />
@@ -162,6 +141,7 @@
       <workItem from="1666317439779" duration="4314000" />
       <workItem from="1666328677783" duration="12386000" />
       <workItem from="1666572423896" duration="18719000" />
+      <workItem from="1666656709167" duration="17077000" />
     </task>
     <task id="LOCAL-00001" summary="to java">
       <created>1666252720207</created>
@@ -226,6 +206,12 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.StringIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="13" />
+        </breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="dart-exception" />
       </default-breakpoints>

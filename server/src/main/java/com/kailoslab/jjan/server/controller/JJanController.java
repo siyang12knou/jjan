@@ -59,8 +59,8 @@ public class JJanController {
         if(snsList.isEmpty()) {
             aggrDto = new AggrDto(word, fromYm, toYm, sns, Collections.emptyList(), Collections.emptyMap());
         } else {
-            List<MentionAggrDto> mentionList = jjanService.getDummyMentionList(word, fromYm, toYm, sns);
-            Map<String, List<AssociationAggrDto>> associationList = jjanService.getDummyAssociationList(word, fromYm, toYm, sns);
+            List<MentionAggrDto> mentionList = jjanService.getMentionList(word, fromYm, toYm, sns);
+            Map<String, List<AssociationAggrDto>> associationList = jjanService.getAssociationList(word, fromYm, toYm, sns);
             aggrDto = new AggrDto(word, fromYm, toYm, sns, mentionList, associationList);
         }
 

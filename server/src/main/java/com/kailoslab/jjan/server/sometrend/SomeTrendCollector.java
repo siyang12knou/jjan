@@ -20,6 +20,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.ObjectUtils;
 
 import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import java.text.MessageFormat;
 import java.time.Duration;
 import java.util.HashMap;
@@ -49,6 +50,11 @@ public class SomeTrendCollector {
             options.setExperimentalOption("prefs", chromePrefs);
             webDriver = new ChromeDriver(options);
         }
+    }
+
+    @PreDestroy
+    private void quit() {
+        webDriver.quit();
     }
 
     public void start() {

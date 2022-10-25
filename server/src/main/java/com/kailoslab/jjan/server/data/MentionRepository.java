@@ -14,7 +14,7 @@ public interface MentionRepository extends JpaRepository<MentionEntity, Long> {
 SELECT sns, word, ym, SUM(cnt) AS cnt
   FROM (SELECT A.sns                    AS sns,
                B.word                   AS word,
-               substr(A.from_ymd, 0, 6) AS ym,
+               substr(A.from_ymd, 1, 6) AS ym,
                A.cnt                    AS cnt
         FROM tb_mention A
                  left join tb_word B
@@ -24,7 +24,8 @@ SELECT sns, word, ym, SUM(cnt) AS cnt
           AND B.word = :word
           AND A.sns IN :sns) aggr_mention
  GROUP BY sns, word, ym
+ ORDER BY sns, ym
 """)
     List<MentionAggrDto> findAggrByWordAndYear(String word, String fromYmd, String toYmd, List<String> sns);
-    void deleteByFromYmdAnAndToYmd(String fromYmd, String toYmd);
+    void deleteByFromYmdAndToYmd(String fromYmd, String toYmd);
 }
