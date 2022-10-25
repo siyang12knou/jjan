@@ -4,26 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b0fb81b-096d-4ac3-b81d-0bf105919e00" name="Changes" comment="크롤링 구현 중">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1722ad7c-434d-4bd6-81d7-1658864e9f43.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1722ad7c-434d-4bd6-81d7-1658864e9f43.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/lib/screen/result/result_channel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/client/lib/screen/result/result_channel.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/lib/screen/result/result_screen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/client/lib/screen/result/result_screen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/client/pubspec.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/ServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/ServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/controller/JJanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/controller/JJanController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/AssociationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/AssociationRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/MentionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/MentionRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/entity/AssociationEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/entity/AssociationEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/entity/CodeEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/entity/CodeEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/entity/MentionEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/entity/MentionEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/entity/WordEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/entity/WordEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/service/JJanService.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/service/JJanService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/sometrend/SomeTrendCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/sometrend/SomeTrendCollector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/sometrend/parser/ParserCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/sometrend/parser/ParserCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/sometrend/parser/SomeTrendExcelParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/sometrend/parser/SomeTrendExcelParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/application.yml" afterDir="false" />
+    <list default="true" id="5b0fb81b-096d-4ac3-b81d-0bf105919e00" name="Changes" comment="root ignore 파일 생성">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +123,7 @@
       <workItem from="1666317439779" duration="4314000" />
       <workItem from="1666328677783" duration="12386000" />
       <workItem from="1666572423896" duration="18719000" />
-      <workItem from="1666656709167" duration="17077000" />
+      <workItem from="1666656709167" duration="17239000" />
     </task>
     <task id="LOCAL-00001" summary="to java">
       <created>1666252720207</created>
@@ -171,7 +153,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666342014632</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="화면 실 데이터 테스트 확인">
+      <created>1666680718149</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1666680718149</updated>
+    </task>
+    <task id="LOCAL-00006" summary="root ignore 파일 생성">
+      <created>1666680771500</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1666680771500</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,7 +198,9 @@
     <MESSAGE value="웹 크롤링" />
     <MESSAGE value="언급량 수정" />
     <MESSAGE value="크롤링 구현 중" />
-    <option name="LAST_COMMIT_MESSAGE" value="크롤링 구현 중" />
+    <MESSAGE value="화면 실 데이터 테스트 확인" />
+    <MESSAGE value="root ignore 파일 생성" />
+    <option name="LAST_COMMIT_MESSAGE" value="root ignore 파일 생성" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
