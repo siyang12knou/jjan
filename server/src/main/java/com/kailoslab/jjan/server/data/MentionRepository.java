@@ -24,7 +24,7 @@ SELECT sns, word, ym, SUM(cnt) AS cnt
           AND B.word = :word
           AND A.sns IN :sns) aggr_mention
  GROUP BY sns, word, ym
- ORDER BY sns, ym
+ ORDER BY ym
 """)
     List<MentionAggrDto> findAggrByWordAndYear(String word, String fromYmd, String toYmd, List<String> sns);
     void deleteByFromYmdAndToYmd(String fromYmd, String toYmd);

@@ -4,7 +4,6 @@ import 'package:jjan_client/widget/vspace_widget.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
 import '../../model/code.dart';
-import '../../service/code_service.dart';
 import '../../utils/constants.dart';
 import '../../utils/utils.dart';
 import '../../values/colors.dart';
@@ -83,18 +82,19 @@ class MentionChart extends StatelessWidget {
       });
 
       List<SplineSeries> chartSeriesList = [];
-      dataList.keys.forEach((snsCode) {
-        Code code = CodeService.getInstance().getCode(snsCode, snsCodeList);
-        chartSeriesList.add(
-          SplineSeries<MentionChartData, String> (
-            dataSource: dataList[snsCode],
-            xValueMapper: (MentionChartData data, _) => data.ym.substring(2, 4) + "." + data.ym.substring(4),
-            yValueMapper: (MentionChartData data, _) => data.cnt,
-            color: code.properties["color"] == null ? randomColor() : fromHex(code.properties["color"]),
-            name: code.name,
-            legendIconType: LegendIconType.rectangle,
-          )
-        );
+      snsCodeList.forEach((code) {
+        if(dataList[code.codeId] != null) {
+          chartSeriesList.add(
+              SplineSeries<MentionChartData, String> (
+                dataSource: dataList[code.codeId],
+                xValueMapper: (MentionChartData data, _) => data.ym.substring(2, 4) + "." + data.ym.substring(4),
+                yValueMapper: (MentionChartData data, _) => data.cnt,
+                color: code.properties["color"] == null ? randomColor() : fromHex(code.properties["color"]),
+                name: code.name,
+                legendIconType: LegendIconType.rectangle,
+              )
+          );
+        }
       });
 
       return chartSeriesList;
