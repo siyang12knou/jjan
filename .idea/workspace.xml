@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b0fb81b-096d-4ac3-b81d-0bf105919e00" name="Changes" comment="chart legend">
+    <list default="true" id="5b0fb81b-096d-4ac3-b81d-0bf105919e00" name="Changes" comment="여러 탭을 이용한 멀티 크롤링 구현 중">
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/config/AsyncConfigure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/sometrend/SomeTrendCrawlerFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/lib/screen/result/mention_chart.dart" beforeDir="false" afterPath="$PROJECT_DIR$/client/lib/screen/result/mention_chart.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/MentionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/MentionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/CodeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/CodeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/dto/ResultMessageDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/dto/ResultMessageDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/entity/WordEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/entity/WordEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/sometrend/SomeTrendCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/sometrend/SomeTrendCollector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/sometrend/SomeTrendConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/sometrend/SomeTrendConstants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/sometrend/SomeTrendCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/sometrend/SomeTrendCrawler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/sometrend/WebTabFactory.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +25,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Dart File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -46,7 +53,6 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "dart.analysis.tool.window.visible": "false",
-    "flutter.view.tool.window.visible": "true",
     "io.flutter.reload.alreadyRun": "true",
     "jdk.selected.JAVA_MODULE": "17",
     "last_opened_file_path": "C:/Users/siyan/workspaces/jjan/server/src/main/java/com/kailoslab/jjan/server",
@@ -126,7 +132,8 @@
       <workItem from="1666317439779" duration="4314000" />
       <workItem from="1666328677783" duration="12386000" />
       <workItem from="1666572423896" duration="18719000" />
-      <workItem from="1666656709167" duration="20114000" />
+      <workItem from="1666656709167" duration="20956000" />
+      <workItem from="1666741253651" duration="19724000" />
     </task>
     <task id="LOCAL-00001" summary="to java">
       <created>1666252720207</created>
@@ -191,7 +198,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666682527781</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="chart legend order">
+      <created>1666683749162</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1666683749162</updated>
+    </task>
+    <task id="LOCAL-00011" summary="chart legend order">
+      <created>1666683780805</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1666683780805</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,7 +248,9 @@
     <MESSAGE value="root ignore 파일 수정" />
     <MESSAGE value="프로젝트 파일 수정" />
     <MESSAGE value="chart legend" />
-    <option name="LAST_COMMIT_MESSAGE" value="chart legend" />
+    <MESSAGE value="chart legend order" />
+    <MESSAGE value="여러 탭을 이용한 멀티 크롤링 구현 중" />
+    <option name="LAST_COMMIT_MESSAGE" value="여러 탭을 이용한 멀티 크롤링 구현 중" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

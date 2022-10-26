@@ -18,4 +18,7 @@ public interface SomeTrendConstants {
     String youtubeMentionDownloadFileName = "[썸트렌드] {0} 콘텐츠조회수추이_{1}-{2}.xlsx";
     String youtubeAssociationDownloadFileName = "[썸트렌드] {0} 유튜브연관어_{1}-{2}.xlsx";
 
+    String snsGroupId = "sns";
+    String youtubeId = "youtube";
+
 }

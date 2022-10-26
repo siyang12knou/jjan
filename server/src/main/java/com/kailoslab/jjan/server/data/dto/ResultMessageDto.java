@@ -10,8 +10,9 @@ import lombok.Setter;
 @Setter
 @Getter
 public class ResultMessageDto {
+    public static String MESSAGE_OK = "데이터 처리에 성공하였습니다.";
     private boolean result = true;
-    private String message = "데이터 처리에 성공하였습니다.";
+    private String message = MESSAGE_OK;
     private Object data;
 
     public ResultMessageDto(Object data) {
@@ -19,7 +20,6 @@ public class ResultMessageDto {
     }
 
     public ResultMessageDto(boolean result, String message) {
-        this.result = result;
-        this.message = message;
+        this(result, message, null);
     }
 }
