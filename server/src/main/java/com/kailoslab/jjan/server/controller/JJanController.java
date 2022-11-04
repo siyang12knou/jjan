@@ -7,7 +7,6 @@ import com.kailoslab.jjan.server.data.dto.ResultMessageDto;
 import com.kailoslab.jjan.server.data.entity.CodeEntity;
 import com.kailoslab.jjan.server.data.entity.WordEntity;
 import com.kailoslab.jjan.server.service.JJanService;
-import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,7 +17,9 @@ import org.springframework.web.bind.annotation.RestController;
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.*;
+import java.util.Collections;
+import java.util.List;
+import java.util.Map;
 
 @RequiredArgsConstructor
 @RestController
@@ -51,7 +52,7 @@ public class JJanController {
 
         if(StringUtils.isEmpty(toYm)) {
             LocalDateTime current = LocalDateTime.now();
-            toYm = current.format(DateTimeFormatter.ofPattern("yyyyMM"));
+            toYm = current.minusMonths(1).format(DateTimeFormatter.ofPattern("yyyyMM"));
         }
 
         List<String> snsList = sns.stream().filter((snsCode) -> StringUtils.isNotEmpty(snsCode)).toList();

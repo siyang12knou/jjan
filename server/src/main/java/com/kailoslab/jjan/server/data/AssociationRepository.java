@@ -3,6 +3,7 @@ package com.kailoslab.jjan.server.data;
 import com.kailoslab.jjan.server.data.dto.AssociationAggrDto;
 import com.kailoslab.jjan.server.data.entity.AssociationEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
@@ -23,8 +24,18 @@ SELECT A.sns      AS sns,
    AND B.word = :word
    AND A.sns IN :sns
 GROUP BY sns, word, associatedWord
-ORDER BY sns ASC, cnt DESC 
+ORDER BY sns, cnt DESC
 """)
     List<AssociationAggrDto> findAggrByWordAndYear(String word, String fromYmd, String toYmd, List<String> sns);
-    void deleteByFromYmdAndToYmd(String fromYmd, String toYmd);
+
+    @Modifying
+    @Query(nativeQuery = true, value = """
+DELETE
+  FROM tb_association
+ WHERE id_word = :idWord
+   AND from_ymd BETWEEN :fromYmd AND :toYmd
+   AND to_ymd BETWEEN :fromYmd AND :toYmd
+   AND sns IN :sns
+""")
+    void deleteByIdWordAndFromYmdGreaterThanEqualAndToYmdLessThanEqualAndSnsIn(Integer idWord, String fromYmd, String toYmd, List<String> sns);
 }

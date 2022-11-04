@@ -175,7 +175,7 @@ class _ResultChannelState extends State<ResultChannel> {
                   height: 24,
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: [
+                    children: lines.isNotEmpty ? [
                       Align(
                         alignment: Alignment.topLeft,
                         child: Text(
@@ -204,6 +204,21 @@ class _ResultChannelState extends State<ResultChannel> {
                               fontSize: 14,
                               letterSpacing: -0.56,
                             ),
+                          ),
+                        ),
+                      ),
+                    ] : [
+                      Align(
+                        alignment: Alignment.topLeft,
+                        child: Text(
+                          "연관 키워드가 없습니다.",
+                          textAlign: TextAlign.left,
+                          style: TextStyle(
+                            color: AppColors.primaryText,
+                            fontFamily: "Pretendard",
+                            fontWeight: FontWeight.w400,
+                            fontSize: 20,
+                            letterSpacing: -0.8,
                           ),
                         ),
                       ),

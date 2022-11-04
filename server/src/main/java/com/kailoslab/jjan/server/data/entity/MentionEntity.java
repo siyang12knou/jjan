@@ -26,13 +26,13 @@ public class MentionEntity {
     private Integer idWord;
     private String fromYmd;
     private String toYmd;
-    private Integer cnt;
-    private Integer subCnt;
+    private Integer cnt = 0;
+    private Integer subCnt = 0;
     @CreatedDate
     private LocalDateTime createdDate;
 
     public MentionEntity(String sns, Integer idWord, String fromYmd, String toYmd, Integer cnt) {
-        this(sns, idWord, fromYmd, toYmd, cnt, null);
+        this(sns, idWord, fromYmd, toYmd, cnt, 0);
     }
 
     public MentionEntity(String sns, Integer idWord, String fromYmd, String toYmd, Integer cnt, Integer subCnt) {
