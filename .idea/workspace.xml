@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
@@ -136,7 +141,7 @@
       <workItem from="1667463301967" duration="312000" />
       <workItem from="1667524701890" duration="64000" />
       <workItem from="1667524859335" duration="44000" />
-      <workItem from="1667524912744" duration="323000" />
+      <workItem from="1667524912744" duration="529000" />
     </task>
     <task id="LOCAL-00001" summary="to java">
       <created>1666252720207</created>
@@ -222,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667525189771</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="remoteDebugger로 실행 가능 구현">
+      <created>1667525378487</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1667525378487</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
