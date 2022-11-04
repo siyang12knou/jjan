@@ -11,5 +11,7 @@ import java.util.Optional;
 public interface WordRepository extends JpaRepository<WordEntity, Integer> {
     List<WordEntity> findAllByWordStartsWithAndDeletedFalse(String word);
     List<WordEntity> findAllByDeletedFalse();
+    List<WordEntity> findAllByIdGreaterThanEqualAndDeletedFalse(Integer id);
+    Optional<WordEntity> findByIdAndDeletedFalse(Integer id);
     Optional<WordEntity> findByWordAndDeletedFalse(String word);
 }

@@ -18,11 +18,12 @@ spring:
     database: mysql
 
 webdriver:
-  chrome:
+  browser:
     driver: C:\\Users\\siyan\\workspaces\\jjan\\server\\driver\\chromedriver.exe
+    path: C:\Program Files\Google\Chrome\Application\chrome.exe
 
 kailoslab:
-  download-dir: C:\Users\siyan\Downloads\some
+  download-dir: C:\\Users\\siyan\\Downloads
 
 #logging:
 #  config: classpath:logback-spring.xml

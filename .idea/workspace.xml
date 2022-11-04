@@ -5,16 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b0fb81b-096d-4ac3-b81d-0bf105919e00" name="Changes" comment="여러 탭을 이용한 멀티 크롤링 구현 중">
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/config/AsyncConfigure.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/sometrend/SomeTrendCrawlerFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chrome.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/driver/chromedriver" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/sometrend/CollectorCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/sometrend/CollectorDataService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1722ad7c-434d-4bd6-81d7-1658864e9f43.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/1722ad7c-434d-4bd6-81d7-1658864e9f43.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_devtools_v104_4_5_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_devtools_v104_4_5_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_devtools_v105_4_5_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_devtools_v105_4_5_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_devtools_v106_4_5_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_devtools_v106_4_5_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_devtools_v85_4_5_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_devtools_v85_4_5_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_4_5_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_seleniumhq_selenium_selenium_java_4_5_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_shell_spring_shell_autoconfigure_2_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_shell_spring_shell_autoconfigure_2_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_shell_spring_shell_core_2_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_shell_spring_shell_core_2_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_shell_spring_shell_standard_2_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_shell_spring_shell_standard_2_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_shell_spring_shell_standard_commands_2_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_shell_spring_shell_standard_commands_2_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_shell_spring_shell_starter_2_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_shell_spring_shell_starter_2_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_shell_spring_shell_table_2_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_shell_spring_shell_table_2_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/lib/screen/result/result_channel.dart" beforeDir="false" afterPath="$PROJECT_DIR$/client/lib/screen/result/result_channel.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/driver/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/server/driver/chromedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/controller/JJanController.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/controller/JJanController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/AssociationRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/AssociationRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/CodeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/CodeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/dto/ResultMessageDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/dto/ResultMessageDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/entity/WordEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/entity/WordEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/MentionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/MentionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/WordRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/WordRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/entity/AssociationEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/entity/AssociationEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/entity/MentionEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/data/entity/MentionEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/sometrend/SomeTrendCollector.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/sometrend/SomeTrendCollector.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/sometrend/SomeTrendConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/sometrend/SomeTrendConstants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/sometrend/SomeTrendCrawler.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/sometrend/SomeTrendCrawler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/sometrend/WebTabFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/sometrend/SomeTrendCrawlerFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/sometrend/parser/SomeTrendExcelParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/java/com/kailoslab/jjan/server/sometrend/parser/SomeTrendExcelParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/server/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,34 +68,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "dart.analysis.tool.window.visible": "false",
-    "io.flutter.reload.alreadyRun": "true",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Users/siyan/workspaces/jjan/server/src/main/java/com/kailoslab/jjan/server",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "show.migrate.to.gradle.popup": "false",
-    "spring.configuration.checksum": "cf1e8c14e54505f60aa10ceb8d5d8ab3"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
+    &quot;io.flutter.reload.alreadyRun&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/siyan/workspaces/jjan/server/src/main/java/com/kailoslab/jjan/server&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;cf1e8c14e54505f60aa10ceb8d5d8ab3&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\siyan\workspaces\jjan\server\src\main\java\com\kailoslab\jjan\server" />
@@ -134,6 +161,18 @@
       <workItem from="1666572423896" duration="18719000" />
       <workItem from="1666656709167" duration="20956000" />
       <workItem from="1666741253651" duration="19724000" />
+      <workItem from="1666828681271" duration="13144000" />
+      <workItem from="1666859542959" duration="1775000" />
+      <workItem from="1666944396782" duration="218000" />
+      <workItem from="1667178660696" duration="20586000" />
+      <workItem from="1667204848275" duration="604000" />
+      <workItem from="1667260893810" duration="20644000" />
+      <workItem from="1667349349754" duration="17095000" />
+      <workItem from="1667436820809" duration="2624000" />
+      <workItem from="1667439680163" duration="13147000" />
+      <workItem from="1667463301967" duration="312000" />
+      <workItem from="1667524701890" duration="64000" />
+      <workItem from="1667524859335" duration="44000" />
     </task>
     <task id="LOCAL-00001" summary="to java">
       <created>1666252720207</created>
@@ -254,12 +293,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <breakpoint enabled="true" type="java-exception">
-          <properties class="java.lang.StringIndexOutOfBoundsException" package="java.lang" />
-          <option name="timeStamp" value="13" />
-        </breakpoint>
-      </breakpoints>
       <default-breakpoints>
         <breakpoint type="dart-exception" />
       </default-breakpoints>

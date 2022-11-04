@@ -12,7 +12,7 @@ import java.util.Optional;
 public interface CodeRepository extends JpaRepository<CodeEntity, CodePK> {
 
     List<CodeEntity> findByGroupIdAndDeletedFalseOrderByOrdinal(String groupId);
-    List<CodeEntity> findByGroupIdAndCodeIdInDeletedFalseOrderByOrdinal(String groupId, List<String> codeId);
+    List<CodeEntity> findByGroupIdAndCodeIdInAndDeletedFalseOrderByOrdinal(String groupId, List<String> codeId);
     Optional<CodeEntity> findFirstByGroupIdAndDeletedFalseOrderByOrdinalDesc(String groupId);
     Optional<CodeEntity> findByGroupIdAndCodeIdAndDeletedFalse(String groupId, String codeId);
 }

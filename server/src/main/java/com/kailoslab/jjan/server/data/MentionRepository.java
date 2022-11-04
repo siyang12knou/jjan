@@ -3,6 +3,7 @@ package com.kailoslab.jjan.server.data;
 import com.kailoslab.jjan.server.data.dto.MentionAggrDto;
 import com.kailoslab.jjan.server.data.entity.MentionEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
@@ -27,5 +28,15 @@ SELECT sns, word, ym, SUM(cnt) AS cnt
  ORDER BY ym
 """)
     List<MentionAggrDto> findAggrByWordAndYear(String word, String fromYmd, String toYmd, List<String> sns);
-    void deleteByFromYmdAndToYmd(String fromYmd, String toYmd);
+
+    @Modifying
+    @Query(nativeQuery = true, value = """
+DELETE
+  FROM tb_mention
+ WHERE id_word = :idWord\040
+   AND from_ymd BETWEEN :fromYmd AND :toYmd\040
+   AND to_ymd BETWEEN :fromYmd AND :toYmd
+   AND sns IN :sns
+""")
+    void deleteByIdWordAndFromYmdGreaterThanEqualAndToYmdLessThanEqualAndSnsIn(Integer idWord, String fromYmd, String toYmd, List<String> sns);
 }

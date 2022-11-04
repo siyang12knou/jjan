@@ -27,8 +27,8 @@ public class AssociationEntity {
     private String word;
     private String fromYmd;
     private String toYmd;
-    private Integer cnt;
-    private Integer subCnt;
+    private Integer cnt = 0;
+    private Integer subCnt = 0;
     @CreatedDate
     private LocalDateTime createdDate;
 
