@@ -268,12 +268,14 @@ public class SomeTrendCrawler {
 
     private boolean isNotModal(WebDriver webDriver) {
         List<WebElement> popupModalContent = webDriver.findElements(By.cssSelector(".popup_container"));
+        popupModalContent.addAll(webDriver.findElements(By.cssSelector(".vmodal.effect-scale.popup_content")));
         popupModalContent.forEach(popup -> {
             try {
                 WebElement btnClose = popup.findElement(By.cssSelector(".vmodal-close"));
                 btnClose.click();
             } catch (Throwable ignore) {}
         });
+
         return popupModalContent.isEmpty();
     }
 }
