@@ -76,7 +76,7 @@ public class CollectorDataService {
 
     public void saveAssociationList(List<AssociationEntity> associationEntityList) {
         String insertAssociation = """
-                INSERT INTO tb_mention(sns, id_word, cnt, sub_cnt, from_ymd, to_ymd) VALUES (?, ?, ?, ?, ?, ?)
+                INSERT INTO tb_association(sns, id_word, word, cnt, sub_cnt, from_ymd, to_ymd) VALUES (?, ?, ?, ?, ?, ?, ?)
                 """;
         jdbcTemplate.batchUpdate(insertAssociation, new BatchPreparedStatementSetter() {
             @Override
@@ -84,10 +84,11 @@ public class CollectorDataService {
                 AssociationEntity associationEntity = associationEntityList.get(i);
                 ps.setString(1, associationEntity.getSns());
                 ps.setInt(2, associationEntity.getIdWord());
-                ps.setInt(3, associationEntity.getCnt());
-                ps.setInt(4, associationEntity.getSubCnt());
-                ps.setString(5, associationEntity.getFromYmd());
-                ps.setString(6, associationEntity.getToYmd());
+                ps.setString(3, associationEntity.getWord());
+                ps.setInt(4, associationEntity.getCnt());
+                ps.setInt(5, associationEntity.getSubCnt());
+                ps.setString(6, associationEntity.getFromYmd());
+                ps.setString(7, associationEntity.getToYmd());
             }
 
             @Override
