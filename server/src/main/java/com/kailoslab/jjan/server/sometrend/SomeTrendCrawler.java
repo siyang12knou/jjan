@@ -4,6 +4,7 @@ import com.kailoslab.jjan.server.data.dto.ResultMessageDto;
 import com.kailoslab.jjan.server.data.entity.AssociationEntity;
 import com.kailoslab.jjan.server.data.entity.MentionEntity;
 import com.kailoslab.jjan.server.data.entity.WordEntity;
+import com.kailoslab.jjan.server.utils.Utils;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.ObjectUtils;
@@ -70,7 +71,7 @@ public class SomeTrendCrawler {
                 closeAllPopup(tabDriver);
                 // 주별 버튼 선택
                 WebDriverWait wait = new WebDriverWait(tabDriver, Duration.ofSeconds(20));
-                WebElement radioWeek = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(SomeTrendConstants.mentionWeeklySelector)));
+                WebElement radioWeek = Utils.waitUntil(wait, ExpectedConditions.elementToBeClickable(By.cssSelector(SomeTrendConstants.mentionWeeklySelector)));
                 if(radioWeek != null) {
                     radioWeek.click();
                     closeAllPopup(tabDriver);
@@ -116,7 +117,7 @@ public class SomeTrendCrawler {
                 closeAllPopup(tabDriver);
                 // 주별 버튼 선택
                 WebDriverWait wait = new WebDriverWait(tabDriver, Duration.ofSeconds(20));
-                WebElement radioWeek = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(SomeTrendConstants.associationWeeklySelector)));
+                WebElement radioWeek = Utils.waitUntil(wait, ExpectedConditions.elementToBeClickable(By.cssSelector(SomeTrendConstants.associationWeeklySelector)));
                 if(radioWeek != null) {
                     radioWeek.click();
                     closeAllPopup(tabDriver);
@@ -163,7 +164,7 @@ public class SomeTrendCrawler {
             closeAllPopup(tabDriver);
             // 주별 버튼 선택
             WebDriverWait wait = new WebDriverWait(tabDriver, Duration.ofSeconds(20));
-            WebElement radioWeek = wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(SomeTrendConstants.youtubeWeeklySelector)));
+            WebElement radioWeek = Utils.waitUntil(wait, ExpectedConditions.elementToBeClickable(By.cssSelector(SomeTrendConstants.youtubeWeeklySelector)));
             if(radioWeek != null) {
                 radioWeek.click();
                 closeAllPopup(tabDriver);
@@ -221,7 +222,7 @@ public class SomeTrendCrawler {
 
     private Path getDownloadFile(WebDriver tabDriver, String downloadFileName, String snsCodeId) {
         WebDriverWait wait = new WebDriverWait(tabDriver, Duration.ofSeconds(20));
-        boolean isExist = wait.until((ExpectedCondition<Boolean>) webDriver -> Files.exists(Paths.get(someTrendCollector.getDownloadDir(), downloadFileName)));
+        boolean isExist = Utils.waitUntilBoolean(wait, (ExpectedCondition<Boolean>) webDriver -> Files.exists(Paths.get(someTrendCollector.getDownloadDir(), downloadFileName)));
         if(isExist) {
             Path sourcePath = Paths.get(someTrendCollector.getDownloadDir(), downloadFileName);
             try {
