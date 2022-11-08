@@ -9,10 +9,7 @@ import com.kailoslab.jjan.server.data.entity.WordEntity;
 import com.kailoslab.jjan.server.service.JJanService;
 import lombok.RequiredArgsConstructor;
 import org.apache.commons.lang3.StringUtils;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.text.SimpleDateFormat;
 import java.time.LocalDateTime;
@@ -23,7 +20,8 @@ import java.util.Map;
 
 @RequiredArgsConstructor
 @RestController
-public class JJanController {
+@RequestMapping("/api/v1.0")
+public class JJanApiController {
 
     private SimpleDateFormat sdf = new SimpleDateFormat("yyyyMM");
 

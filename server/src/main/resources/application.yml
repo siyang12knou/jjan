@@ -4,7 +4,6 @@ server:
     session:
       cookie:
         name: JJAANNSESSION
-    context-path: /api/v1.0
 
 spring:
   datasource:
