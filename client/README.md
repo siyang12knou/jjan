@@ -1,6 +1,6 @@
-# jjan
+# JJAANN
 
-A new Flutter project.
+Worldwide Viral Trend
 
 ## Getting Started
 
